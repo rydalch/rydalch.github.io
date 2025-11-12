@@ -25,7 +25,7 @@ ninja.data = [{
           },
         },{id: "nav-teaching",
           title: "teaching",
-          description: "Teaching example.",
+          description: "Example of teaching to connect theory with the real world.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/teaching/";
