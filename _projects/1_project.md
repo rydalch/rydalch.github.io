@@ -30,5 +30,3 @@ A commercial provider had a similar issue, as shown here:
 After some experimentation, I designed an agentic approach that leverages the excellent searching capabilities of grep to find the relevant sections within the appropriate policies. This is then fed to the LLM to generate the response.
 
 More details to come....
-
-{% endraw %}
