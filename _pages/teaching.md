@@ -2,11 +2,14 @@
 layout: page
 permalink: /teaching/
 title: teaching
-description: Materials for courses you taught. Replace this text with your description.
+description: Teaching example.
 nav: true
 nav_order: 6
 ---
 
-For now, this page is assumed to be a static description of your courses. You can convert it to a collection similar to `_projects/` so that you can have a dedicated page for each course.
+Effective teaching requires engaging learners and helping them apply what they're learning. This video is an asynchronous teaching example of how I connect theoretical concepts to the real world. I created the cirriculum based on objectives from the Security+ certification.
 
-Organize your courses by years, topics, or universities, however you like!
+![YT-Screenshot.png]({{site.baseurl}}/images/YT-Screenshot.png)
+
+
+[Teaching Example on Youtube](https://youtu.be/WToxN5Dn5q4)
