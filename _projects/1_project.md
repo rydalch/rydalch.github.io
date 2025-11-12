@@ -8,7 +8,7 @@ category: work
 related_publications: true
 ---
 
-One of the most time consuming activities for many organizations with business customers is responding to inquiries about security practices. Most customers have a questionnaire they want completed to help them evaluated how well the company meets their requirements. Completing the questionnaire usually requires an analyst to review each question and provide a response. 
+One of the most time consuming activities for many organizations with business customers is responding to inquiries about security practices. Most customers have a questionnaire they want completed to help them evaluated how well the company meets their requirements. Completing the questionnaire usually requires an analyst to review each question and provide a response.
 
 In order to provide an accurate response, the analyst needs to be someone who understands the company's security policies and standards as well as the company's products and services.
 
