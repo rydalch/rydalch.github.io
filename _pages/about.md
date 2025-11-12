@@ -6,7 +6,7 @@ subtitle: IS Executive and Faculty Candidate
 
 profile:
   align: right
-  image: Rydalch_headshot-city.jpg
+  image: Rydalch_headshot-city.jpeg
   image_circular: false # crops the image to make it circular
   more_info: >
 
