@@ -2,7 +2,7 @@
 layout: page
 permalink: /teaching/
 title: teaching
-description: Teaching example.
+description: Example of teaching to connect theory with the real world.
 nav: true
 nav_order: 6
 ---
