@@ -5,7 +5,7 @@ description: tool to generate accurate responses to customer security questionna
 img: assets/img/12.jpg
 importance: 1
 category: work
-related_publications: true
+related_publications: false
 ---
 
 ### **From Naive RAG to a File-Navigating Agent: A Journey in Automating Security Questionnaires**
@@ -29,7 +29,7 @@ A commercial provider had a similar issue, as shown here:
 
 So I tried an agentic approach that led to much better and more consistent outcomes. It works with a large, single policy document with over a hundred pages, and it works with a set of smaller, 3 to 5 page each, policy documents.
 
-This has been a fascinating journey, moving far beyond my initial scope into the nuanced and often challenging world of building truly robust agents. I went from an initial RAG idea, through a "RAG Obituary" paradigm shift, to the difficult but rewarding process of hardening a local, file-navigating agent against real-world failures.
+This has been a fascinating journey, moving far beyond my initial scope into the nuanced and often challenging world of building truly robust agents. I went from an initial RAG idea, through a "RAG Obituary" paradigm shift, to the local, file-navigating agent.
 
 #### **Phase 1: The RAG Illusion**
 
@@ -45,7 +45,11 @@ The first results were deceptively promising. But as soon as a questionnaire use
 
 #### **Phase 2: The Paradigm Shift – The "RAG Obituary"**
 
-The turning point came from an article I came across on Hacker News titled "[The RAG Obituary: Killed by Agents, Buried by Context Windows](https://www.nicolasbustamante.com/p/the-rag-obituary-killed-by-agents)." It argued that the entire RAG pipeline of chunking, embedding, and vector databases was a clever workaround for an era of small context windows. The future, it claimed, belonged to **investigator agents** that could navigate and read entire documents directly, much like a human would, using simple but powerful tools like `grep`. Around the same time, Anthropic published an article with similar takaways titled "[Effective context engineering for AI agents](https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents)."
+The turning point came from an article I came across on Hacker News titled "[The RAG Obituary: Killed by Agents, Buried by Context Windows](https://www.nicolasbustamante.com/p/the-rag-obituary-killed-by-agents)." 
+<aside>
+  <p>Around the same time, Anthropic published an article with similar takaways titled <a href="https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents" target="_blank">Effective context engineering for AI agents</a></p>
+</aside> 
+It argued that the entire RAG pipeline of chunking, embedding, and vector databases was a clever workaround for an era of small context windows. The future, it claimed, belonged to **investigator agents** that could navigate and read entire documents directly, much like a human would, using simple but powerful tools like `grep`.
 
 This was a profound shift in thinking. The goal was no longer to find the *most similar* fragment of text but to build an agent that could investigate a file system to find the correct answer.
 
