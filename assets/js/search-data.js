@@ -39,7 +39,7 @@ ninja.data = [{
           title: 'placeholder',
           description: "Handwritting Transcription with AI",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/ai-writting/";
+              window.location.href = "/projects/ai-transcription/";
             },},{id: "projects-budget-tracker",
           title: 'budget tracker',
           description: "update a budget automatically",
