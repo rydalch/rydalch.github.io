@@ -44,6 +44,7 @@ Rather than continuing to fight with open-source tools, I evaluated Google Cloud
 - Enterprise-grade accuracy
 
 The implementation required:
+
 - Google Cloud project setup
 - Service account credentials
 - API client integration
