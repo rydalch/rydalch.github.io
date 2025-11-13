@@ -50,6 +50,11 @@ ninja.data = [{
           description: "coming soon",
           section: "Projects",handler: () => {
               window.location.href = "/projects/3_project/";
+            },},{id: "projects-budget-tracker",
+          title: 'budget tracker',
+          description: "update a budget automatically",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/4_project/";
             },},{
         id: 'social-email',
         title: 'email',
