@@ -14,7 +14,7 @@ One of the most time consuming activities for many organizations with business c
 
 In order to provide an accurate response, the analyst needs to be someone who understands the company's security policies and standards as well as the company's products and services.
 
-An LLM seems like an ideal tool to automate the generation of responses. I created a proof of concept to have an LLM respond to questions based on a set of policies. Initially I implemented a RAG approach, which worked well for my test policy documents. When I tested a large, single policy document, it exceeded the context window for the model and the responses would get stuck on the table of contents. 
+An LLM seems like an ideal tool to automate the generation of responses. I created a proof of concept to have an LLM respond to questions based on a set of policies. Initially I implemented a RAG approach, which worked well for my test policy documents. When I tested a large, single policy document, it exceeded the context window for the model and the responses would get stuck on the table of contents.
 
 A commercial provider had a similar issue, as shown here:
 
@@ -27,7 +27,7 @@ A commercial provider had a similar issue, as shown here:
     Screenshot of processing a policy with over 100 pages.
 </div>
 
-So I tried an agentic approach that led to much better and more consistent outcomes. It works with a large, single policy document with over a hundred pages, and it works with a set of smaller, 3 to 5 page each, policy documents. 
+So I tried an agentic approach that led to much better and more consistent outcomes. It works with a large, single policy document with over a hundred pages, and it works with a set of smaller, 3 to 5 page each, policy documents.
 
 This has been a fascinating journey, moving far beyond my initial scope into the nuanced and often challenging world of building truly robust agents. I went from an initial RAG idea, through a "RAG Obituary" paradigm shift, to the difficult but rewarding process of hardening a local, file-navigating agent against real-world failures.
 
@@ -36,17 +36,18 @@ This has been a fascinating journey, moving far beyond my initial scope into the
 The initial idea was straightforward. The problem seemed custom-made for Retrieval-Augmented Generation (RAG), the go-to architecture for question-answering over a private knowledge base.
 
 The setup was simple:
+
 1.  **Ingest:** Process all our security documents—PDFs, DOCX files, etc.—into clean text.
 2.  **Embed & Store:** Use a sentence-transformer model to convert text chunks into vector embeddings and store them in a ChromaDB vector database.
 3.  **Retrieve & Generate:** When a question came in, use similarity search to find the most relevant chunks and feed them to an LLM to synthesize an answer.
 
-The first results were deceptively promising. But as soon as a questionnaire used slightly different terminology (asking about "business continuity" when our policy said "resilience management") the system failed silently. It was a black box that either worked or it didn't, and I had little visibility into *why*.
+The first results were deceptively promising. But as soon as a questionnaire used slightly different terminology (asking about "business continuity" when our policy said "resilience management") the system failed silently. It was a black box that either worked or it didn't, and I had little visibility into why.
 
 #### **Phase 2: The Paradigm Shift – The "RAG Obituary"**
 
 The turning point came from an article I came across on Hacker News titled "[The RAG Obituary: Killed by Agents, Buried by Context Windows](https://www.nicolasbustamante.com/p/the-rag-obituary-killed-by-agents)." It argued that the entire RAG pipeline of chunking, embedding, and vector databases was a clever workaround for an era of small context windows. The future, it claimed, belonged to **investigator agents** that could navigate and read entire documents directly, much like a human would, using simple but powerful tools like `grep`. Around the same time, Anthropic published an article with similar takaways titled "[Effective context engineering for AI agents](https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents)."
 
-This was a profound shift in thinking. The goal was no longer to find the *most similar* fragment of text but to build an agent that could *investigate* a file system to find the *correct* answer.
+This was a profound shift in thinking. The goal was no longer to find the *most similar* fragment of text but to build an agent that could *investigate* a file system to find the correct answer.
 
 #### **Phase 3: Building the Investigator – An Agent with Tools**
 
@@ -54,9 +55,9 @@ Embracing this new philosophy meant a complete architectural overhaul:
 
 1.  **Goodbye, Vector Database:** I scrapped ChromaDB. The knowledge base became a simple folder of clean `.txt` files.
 2.  **Hello, Command-Line Power:** I created a set of Python functions that acted as the agent's "hands," using the `subprocess` module to call `grep`. The primary tools were:
-    *   `search_content`: Searches the *entire content* of all files for keywords and returns the names of the files that contain them.
-    *   `read_file`: Reads the beginning of a document, perfect for grabbing a Table of Contents.
-    *   `go_to_section`: A navigation tool to jump directly to a specific section ID (e.g., "AC-12") within a large document.
+    -   `search_content`: Searches the entire content of all files for keywords and returns the names of the files that contain them.
+    -   `read_file`: Reads the beginning of a document, perfect for grabbing a Table of Contents.
+    -   `go_to_section`: A navigation tool to jump directly to a specific section ID (e.g., "AC-12") within a large document.
 3.  **The Agent Core:** Using LangChain, I built a "ReAct" (Reason-Act) loop. The agent was given a persona and a core directive: analyze the question, choose a tool, execute it, observe the result, and repeat until you have the answer.
 
 This was no longer a static pipeline; it was a dynamic, thinking process.
@@ -67,15 +68,16 @@ Theory is one thing; practice is another. Making the agent work reliably, especi
 
 **Lesson 1: The Hallucination Menace**
 The first major failure came when the agent was asked for a "public privacy policy link" as one of the test questions in the security questionnaire. It ignored the documents entirely and confidently provided the URL to its own creator's (xAI's) privacy policy. It "broke character."
-*   **The Fix:** A much stricter prompt persona. We had to explicitly command it: **"You are a factual Q&A assistant. Your *only* source of knowledge is the set of tools you have been given. You must not use any external knowledge. Do not make up information or filenames."** This constraint was crucial to keeping it grounded.
+
+- **The Fix:** A much stricter prompt persona. We had to explicitly command it: **"You are a factual Q&A assistant. Your *only* source of knowledge is the set of tools you have been given. You must not use any external knowledge. Do not make up information or filenames."** This constraint was crucial to keeping it grounded.
 
 **Lesson 2: The Monolithic Document Trap**
 When I tested the agent against a single, 300-page security manual, it failed consistently. It would correctly use `read_file` to see the Table of Contents, find the perfect section title on page 150, but the navigation tool was too simplistic. It would get stuck in the long Table of Contents, never reaching the actual content deep within the document.
-*   **The Fix:** A smarter tool. The tool was rewritten to not just stop the first time it found a match for a string, but to find all matches within the document (and a few lines before and after) and then intelligently extract a complete answer.
+- **The Fix:** A smarter tool. The tool was rewritten to not just stop the first time it found a match for a string, but to find all matches within the document (and a few lines before and after) and then intelligently extract a complete answer.
 
 **Lesson 3: The Local Model Dilemma**
 While commercial models like GPT-4 followed the turn-by-turn logic well, local models like Llama 3.1 Instruct and Hermes 7B struggled. They would often "hallucinate" an entire multi-step investigation in a single turn, inventing fake tool outputs and presenting a final answer without ever actually using the tools. They were trying to solve the whole problem in one go.
-*   **The Fix:** Radical prompt simplification. The elegant, multi-part strategy in the prompt was confusing the model. We had to replace it with a blunt, rigid set of rules: **"You must only call ONE tool per step. Do not plan multiple steps ahead."** This reduced the model's "creative freedom" and forced it into the step-by-step reasoning loop we needed.
+- **The Fix:** Radical prompt simplification. The elegant, multi-part strategy in the prompt was confusing the model. We had to replace it with a blunt, rigid set of rules: **"You must only call ONE tool per step. Do not plan multiple steps ahead."** This reduced the model's "creative freedom" and forced it into the step-by-step reasoning loop we needed.
 
 #### **Phase 5: The Final Architecture – A Model-Agnostic Investigator**
 
