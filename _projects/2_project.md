@@ -7,7 +7,7 @@ importance: 2
 category: work
 ---
 
-Risk management can be a complex topic. There are many resources available and finding them can be a challenge. I keep a current knowledgebase of resources that I've found to be the most helpful available in this [Risk repository](https://github.com/rydalch/risk?tab=readme-ov-file#readme).
+Cyber risk management can be a complex topic. There are many resources available and finding them can be a challenge. I keep a current knowledgebase of resources that I've found to be the most helpful available in this [Risk repository](https://github.com/rydalch/risk?tab=readme-ov-file#readme).
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
