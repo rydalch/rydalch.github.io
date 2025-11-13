@@ -35,9 +35,9 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
-            },},{id: "projects-placeholder",
-          title: 'placeholder',
-          description: "Handwritting Transcription with AI",
+            },},{id: "projects-handwritting-transcription",
+          title: 'Handwritting Transcription',
+          description: "using AI to transcribe my handwritten journals",
           section: "Projects",handler: () => {
               window.location.href = "/projects/ai-transcription/";
             },},{id: "projects-budget-tracker",
