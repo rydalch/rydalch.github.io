@@ -2,7 +2,7 @@
 layout: page
 title: llm questionnaire processing
 description: tool to generate accurate responses to customer security questionnaires using an LLM
-img: assets/img/12.jpg
+img: assets/img/SCF-Control-Mapper.png
 importance: 1
 category: work
 related_publications: false
@@ -45,13 +45,13 @@ The first results were deceptively promising. But as soon as a questionnaire use
 
 #### **Phase 2: The Paradigm Shift – The "RAG Obituary"**
 
-The turning point came from an article I came across on Hacker News titled "[The RAG Obituary: Killed by Agents, Buried by Context Windows](https://www.nicolasbustamante.com/p/the-rag-obituary-killed-by-agents)." 
+The turning point came from an article I came across on Hacker News titled "[The RAG Obituary: Killed by Agents, Buried by Context Windows](https://www.nicolasbustamante.com/p/the-rag-obituary-killed-by-agents)."
 <aside>
   <p>Around the same time, Anthropic published an article with similar takaways titled <a href="https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents" target="_blank">Effective context engineering for AI agents</a></p>
-</aside> 
+</aside>
 It argued that the entire RAG pipeline of chunking, embedding, and vector databases was a clever workaround for an era of small context windows. The future, it claimed, belonged to **investigator agents** that could navigate and read entire documents directly, much like a human would, using simple but powerful tools like `grep`.
 
-This was a profound shift in thinking. The goal was no longer to find the *most similar* fragment of text but to build an agent that could investigate a file system to find the correct answer.
+This was a profound shift in thinking. The goal was no longer to find the most similar fragment of text but to build an agent that could investigate a file system to find the correct answer.
 
 #### **Phase 3: Building the Investigator – An Agent with Tools**
 
