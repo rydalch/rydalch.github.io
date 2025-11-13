@@ -1,97 +1,160 @@
 - title: General Information
   type: map
   contents:
-    - name: Full Name
-      value: Albert Einstein
-    - name: Date of Birth
-      value: 14th March 1879
+    - name: Name
+      value: C. Rydalch
     - name: Languages
-      value: English, German
+      value: English, Russian
 
 - title: Education
   type: time_table
   contents:
-    - title: PhD
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1905
-      description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Federal teaching diploma
-      institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
-      year: 1900
-      description:
-        - Description 1.
-        - Description 2.
+    - title: Masters of Information Systems Management
+      institution: Brigham Young University, Provo, UT
+      year: 2001
+    - title: Bachelor of Science, Management
+      institution: Brigham Young University, Provo, UT
+      year: 2001
 
 - title: Experience
   type: time_table
   contents:
-    - title: Professor of Theoretical Physics
-      institution: Institute for Advanced Study, Princeton University
-      year: 1933 - 1955
+    - title: Senior Director, Information Risk & Compliance
+      institution: Danaher Corporation, Chicago, IL
+      year: 2019 - 2025
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Visiting Professor
-      institution: California Institute of Technology, Pasadena, California, US
-      year: 1933
+        - Developed and delivered executive education on risk management, regulatory compliance, and control frameworks.
+        - Mentored team members, resulting in engagement scores 10%+ above company benchmarks.
+        - Led strategic transformation programs establishing data protection, vulnerability management, insider risk management, and GRC programs across 15+ operating companies.
+        - Overhauled third-party management processes, doubling risk assessment throughput.
+        - Directed enterprise-wide rollout of Microsoft Purview Sensitivity Labeling, achieving 90% global adoption.
+        - Launched email security controls using Sensitivity Labeling integrated with Proofpoint and Microsoft Purview.
+        - Implemented Microsoft Entra conditional access controls to Microsoft 365.
+        - Introduced a collaborative policy update process, aligning policies with NIST 800-53.
+        - Created centers of excellence that improved regulatory compliance (SOX, PCI, NIS2, EU AI Act, GDPR, etc.).
+        - Led the assessment of high value assets, creating a risk-based prioritization for data protection initiatives.
+        - Directed strategic vendor selection, contract negotiation, and executive alignment.
+        - Managed departmental budgeting and forecasting.
+        - Supported lean “kaizen" initiatives, resulting in a 30% reduction in indirect costs in one week.
+        - Implemented the Security Controls Framework and a maturity assessment process.
+        - Managed risk identification, analysis, treatment planning, risk registers and exception handling.
+        - Evaluated, selected and implemented the ServiceNow Integrated Risk Management solution.
+        - Managed development of major incident management and disaster recovery plans.
+    - title: Partner, Co-founder
+      institution: Nojoris Company, LLC, McHenry, IL
+      year: 2018 - Present
       description:
-        - Description 1.
-        - Description 2.
-
-    - title: Director
-      institution: Kaiser Wilhelm Institute for Physics, Berlin, Germany.
-      year: 1917-1933
-
-    - title: Professor of Theoretical Physics
-      institution: Karl-Ferdinand University, Prague, Czechoslovakia
-      year: 1911 - 1917
+        - Co-founded a small e-commerce business selling used circuit breakers.
+        - Managed finance, fulfillment and inventory management.
+    - title: Senior Manager, Enterprise Information Security
+      institution: Motorola Solutions, Chicago, IL
+      year: 2015 - 2019
       description:
+        - Created and delivered security awareness curriculum.
+        - Led continuous improvement through educational hackathons.
+        - Reworked policies, standards, and controls for a cloud-first, mobile-first strategy.
+        - Implemented a global information risk management program aligned with the company’s ERM program.
+        - Managed strategic NIST Cybersecurity Framework assessments.
+        - Led financial regulatory compliance initiatives (SOX, PCI-DSS, GDPR).
+        - Revamped the enterprise resiliency program, saving over $300k per year.
+        - Automated third-party risk assessments, reducing turnaround time by 60%.
+        - Directed M&A security due diligence and integration planning.
+    - title: Security Risk Program Manager
+      institution: Carelon, Anthem subsidiary, Deerfield, IL
+      year: 2007 - 2015
+      description:
+        - Certified ISO 27001 ISMS, establishing risk management lifecycle processes.
+        - Led executive Privacy & Security Governance Committee.
+        - Presented risk assessments and compliance status to executive leadership.
+        - Developed and managed the cyber risk management program.
+        - Implemented and managed a third-party risk management program.
+        - Led successful client security audits and evaluated client contracts for security requirements.
+        - Implemented continuous compliance to identify gaps and validate controls.
+        - Built and managed the disaster recovery program.
+    - title: Business Continuity & Crisis Management Consultant
+      institution: Hewitt Associates, Lincolnshire, IL
+      year: 2005 - 2007
+      description:
+        - Managed global crisis management response and executive communications.
+        - Designed disaster recovery methodologies and coordinated complex tests.
+        - Led pandemic planning efforts for multiple business units.
+    - title: Senior Information Security Consultant
+      institution: EY, San Francisco, CA & Chicago, IL
+      year: 2001 - 2005
+      description:
+        - Provided consulting and audit services for Fortune 500 clients.
+        - Conducted IT general controls testing for Sarbanes-Oxley and SOC 2 compliance.
+        - Assessed and built business continuity programs.
+        - Performed penetration testing and security assessments.
+    - title: Developer
+      institution: MStar Network, Orem, UT
+      year: 2000 - 2001
+      description:
+        - Developed web applications and web content management tools for lds.org.
+        - Built database schemas for Oracle DBMS.
+        - Collaborated with content managers and designers to deliver user-centered web experiences.
 
-    - title: Associate Professor of Theoretical Physics
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1909 - 1911
-
-- title: Open Source Projects
+- title: Teaching, Mentorship, and Curriculum Development
   type: time_table
   contents:
-    - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
-      year: 2015-now
-      description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
+    - title: Teaching Assistant
+      institution: Brigham Young University
+      year: 2000
+      description:
+        - Taught lab instruction for Data Communications course to 100+ undergraduate students.
+        - Built and managed lab network and computing environment.
+        - Developed HTML curriculum and instructional materials.
+        - Provided one-on-one mentorship.
+    - title: Enterprise Security Awareness Training
+      year: 2015 - 2025
+      description:
+        - Designed and delivered security awareness curriculum for global organizations reaching 80,000+ users.
+        - Created engaging educational materials using multiple pedagogical approaches.
+        - Achieved 90% data classification adoption rates.
+    - title: CyberPatriot High School Mentor
+      year: 2019 - 2020
+      description:
+        - Taught cybersecurity fundamentals to high school students.
+        - Mentored student team through problem-solving and critical thinking development.
+    - title: Recent Graduate Mentorship & Development
+      description:
+        - Built structured mentorship programs for interns and entry-level professionals.
+        - Focused on career development, technical skill building, and professional growth.
+    - title: Training & Curriculum Development
+      description:
+        - Designed and delivered training programs for audiences ranging from small groups to 1,000+ person conferences.
+        - Contributed to CSA Trusted AI Safety Expert Certification curriculum and certification exam.
+    - title: Youth Development
+      description:
+        - Designed and facilitated seminars and workshops for youth (ages 11–18).
+        - Led week-long summer programs with engaging curriculum and activities.
+        - Mentored youth leaders.
 
-- title: Honors and Awards
-  type: time_table
-  contents:
-    - year: 1921
-      items:
-        - Nobel Prize in Physics
-        - Matteucci Medal
-    - year: 2029
-      items:
-        - Max Planck Medal
-
-- title: Academic Interests
+- title: Certifications
   type: nested_list
   contents:
-    - title: Topic 1.
+    - title: Current
       items:
-        - Description 1.
-        - Description 2.
-    - title: Topic 2.
+        - TAISE, Trusted AI Safety Expert – CSA (2025)
+        - CISM, Certified Information Security Manager – ISACA (2013)
+        - CISSP, Certified Information Systems Security Professional – (ISC)2 (2003)
+    - title: Expired
       items:
-        - Description 1.
-        - Description 2.
+        - CEH, Certified Ethical Hacker – EC-Council (2012)
+        - PMP, Project Management Professional – PMI (2011)
+        - ISO 27001 Provisional Auditor – IRCA (2010)
+        - GSNA, GIAC Systems and Network Auditor – SANS (2004)
+        - MCP, Microsoft Certified Professional, Windows Server – Microsoft (2001)
 
-- title: Other Interests
-  type: list
+- title: Curriculum and Standards Contributions
+  type: time_table
   contents:
-    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
+    - year: 2025
+      items:
+        - CSA Trusted AI Safety Expert WBT Curriculum and Test, Reviewer
+    - year: 2015
+      items:
+        - ANSI/ASIS/RIMS Risk Assessment Standard, Technical Committee Member
+    - year: 2010
+      items:
+        - ASIS/BSI Business Continuity Management Standard, Technical Committee Member
