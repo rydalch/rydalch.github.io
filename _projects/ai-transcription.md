@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: distill
 title: handwritting transcription
 description: using ai to transcribe my handwritten journals
 img: assets/img/journals.jpg
