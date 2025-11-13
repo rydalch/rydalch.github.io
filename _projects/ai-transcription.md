@@ -1,8 +1,8 @@
 ---
 layout: page
-title: placeholder
-description: Handwritting Transcription with AI
-img: assets/img/7.jpg
+title: Handwritting Transcription
+description: using AI to transcribe my handwritten journals
+img: assets/img/1.jpg
 importance: 3
 category: work
 ---
