@@ -44,7 +44,7 @@ ninja.data = [{
           title: 'budget tracker',
           description: "update a budget automatically",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/4_project/";
+              window.location.href = "/projects/auto-budget/";
             },},{id: "projects-llm-questionnaire-processing",
           title: 'LLM Questionnaire Processing',
           description: "tool to respond to customer security questionnaires using an LLM",
