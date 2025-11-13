@@ -1,7 +1,7 @@
 ---
 layout: page
-title: LLM Questionnaire Processing
-description: tool to respond to customer security questionnaires using an LLM
+title: llm questionnaire processing
+description: tool to generate accurate responses to customer security questionnaires using an LLM
 img: assets/img/12.jpg
 importance: 1
 category: work
