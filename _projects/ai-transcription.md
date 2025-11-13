@@ -1,8 +1,8 @@
 ---
 layout: page
-title: Handwritting Transcription
-description: using AI to transcribe my handwritten journals
-img: assets/img/1.jpg
+title: handwritting transcription
+description: using ai to transcribe my handwritten journals
+img: assets/img/journals.jpg
 importance: 3
 category: work
 ---
@@ -10,6 +10,12 @@ category: work
 # Building a Handwritten Journal OCR Pipeline: From TrOCR to Google Cloud Vision
 
 I recently built a Python pipeline to transcribe handwritten journal pages into Markdown. The goal was simple: scan a journal page, run it through OCR, and get clean, searchable text. My sometimes not very legible handwritting proved to be a challenge. And the path to a working solution taught me more about OCR systems than I expected.
+
+<div class="row justify-content-sm-center">
+  <div class="col-sm mt-3 mt-md-0">
+    {% include figure.liquid path="assets/img/journals.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+  </div>
+</div>
 
 ## The Initial Approach: TrOCR
 
