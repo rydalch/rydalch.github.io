@@ -16,5 +16,3 @@ Effective teaching requires engaging learners and helping them apply what they'r
         {% include figure.liquid loading="eager" path="assets/img/YT-Screenshot.png" title="screenshot from teaching video" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
-
-
