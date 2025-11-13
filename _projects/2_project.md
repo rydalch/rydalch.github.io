@@ -15,5 +15,5 @@ Risk management can be a complex topic. There are many resources available and f
     </div>
 </div>
 <div class="caption">
-    Screenshot of risk resources.
+    Screenshot of risk resources. Follow the link above to visit the repository.
 </div>
