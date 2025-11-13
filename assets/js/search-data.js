@@ -40,11 +40,6 @@ ninja.data = [{
           description: "tool to respond to customer security questionnaires using an LLM",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_project/";
-            },},{id: "projects-risk-resources",
-          title: 'risk resources',
-          description: "knowledgebase of current cyber risk resources",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/2_project/";
             },},{id: "projects-placeholder",
           title: 'placeholder',
           description: "coming soon",
@@ -55,6 +50,11 @@ ninja.data = [{
           description: "update a budget automatically",
           section: "Projects",handler: () => {
               window.location.href = "/projects/4_project/";
+            },},{id: "projects-risk-resources",
+          title: 'risk resources',
+          description: "knowledgebase of current cyber risk resources",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/risk-resources/";
             },},{
         id: 'social-email',
         title: 'email',
