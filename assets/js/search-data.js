@@ -45,6 +45,11 @@ ninja.data = [{
           description: "knowledgebase of current cyber risk resources",
           section: "Projects",handler: () => {
               window.location.href = "/projects/2_project/";
+            },},{id: "projects-placeholder",
+          title: 'placeholder',
+          description: "coming soon",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/3_project/";
             },},{
         id: 'social-email',
         title: 'email',
