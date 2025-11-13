@@ -46,8 +46,8 @@ ninja.data = [{
           section: "Projects",handler: () => {
               window.location.href = "/projects/auto-budget/";
             },},{id: "projects-llm-questionnaire-processing",
-          title: 'LLM Questionnaire Processing',
-          description: "tool to respond to customer security questionnaires using an LLM",
+          title: 'llm questionnaire processing',
+          description: "tool to generate accurate responses to customer security questionnaires using an LLM",
           section: "Projects",handler: () => {
               window.location.href = "/projects/llm-answers/";
             },},{id: "projects-risk-resources",
