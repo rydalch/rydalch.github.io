@@ -45,9 +45,7 @@ The first results were deceptively promising. But as soon as a questionnaire use
 
 #### **Phase 2: The Paradigm Shift – The "RAG Obituary"**
 
-<aside>
-Around the same time, Anthropic published an article with similar takaways titled <a href="https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents" target="_blank">Effective context engineering for AI agents</a>
-</aside>
+<aside><p>Around the same time, Anthropic published an article with similar takaways titled <a href="https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents" target="_blank">Effective context engineering for AI agents</a></p></aside>
 
 The turning point came from an article I came across on Hacker News titled "[The RAG Obituary: Killed by Agents, Buried by Context Windows](https://www.nicolasbustamante.com/p/the-rag-obituary-killed-by-agents)." It argued that the entire RAG pipeline of chunking, embedding, and vector databases was a clever workaround for an era of small context windows. The future, it claimed, belonged to **investigator agents** that could navigate and read entire documents directly, much like a human would, using simple but powerful tools like `grep`.
 
