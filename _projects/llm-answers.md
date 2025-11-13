@@ -55,9 +55,9 @@ Embracing this new philosophy meant a complete architectural overhaul:
 
 1.  **Goodbye, Vector Database:** I scrapped ChromaDB. The knowledge base became a simple folder of clean `.txt` files.
 2.  **Hello, Command-Line Power:** I created a set of Python functions that acted as the agent's "hands," using the `subprocess` module to call `grep`. The primary tools were:
-    -   `search_content`: Searches the entire content of all files for keywords and returns the names of the files that contain them.
-    -   `read_file`: Reads the beginning of a document, perfect for grabbing a Table of Contents.
-    -   `go_to_section`: A navigation tool to jump directly to a specific section ID (e.g., "AC-12") within a large document.
+    - `search_content`: Searches the entire content of all files for keywords and returns the names of the files that contain them.
+    - `read_file`: Reads the beginning of a document, perfect for grabbing a Table of Contents.
+    - `go_to_section`: A navigation tool to jump directly to a specific section ID (e.g., "AC-12") within a large document.
 3.  **The Agent Core:** Using LangChain, I built a "ReAct" (Reason-Act) loop. The agent was given a persona and a core directive: analyze the question, choose a tool, execute it, observe the result, and repeat until you have the answer.
 
 This was no longer a static pipeline; it was a dynamic, thinking process.
@@ -69,14 +69,16 @@ Theory is one thing; practice is another. Making the agent work reliably, especi
 **Lesson 1: The Hallucination Menace**
 The first major failure came when the agent was asked for a "public privacy policy link" as one of the test questions in the security questionnaire. It ignored the documents entirely and confidently provided the URL to its own creator's (xAI's) privacy policy. It "broke character."
 
-- **The Fix:** A much stricter prompt persona. We had to explicitly command it: **"You are a factual Q&A assistant. Your *only* source of knowledge is the set of tools you have been given. You must not use any external knowledge. Do not make up information or filenames."** This constraint was crucial to keeping it grounded.
+- **The Fix:** A much stricter prompt persona. We had to explicitly command it: **"You are a factual Q&A assistant. Your _only_ source of knowledge is the set of tools you have been given. You must not use any external knowledge. Do not make up information or filenames."** This constraint was crucial to keeping it grounded.
 
 **Lesson 2: The Monolithic Document Trap**
 When I tested the agent against a single, 300-page security manual, it failed consistently. It would correctly use `read_file` to see the Table of Contents, find the perfect section title on page 150, but the navigation tool was too simplistic. It would get stuck in the long Table of Contents, never reaching the actual content deep within the document.
+
 - **The Fix:** A smarter tool. The tool was rewritten to not just stop the first time it found a match for a string, but to find all matches within the document (and a few lines before and after) and then intelligently extract a complete answer.
 
 **Lesson 3: The Local Model Dilemma**
 While commercial models like GPT-4 followed the turn-by-turn logic well, local models like Llama 3.1 Instruct and Hermes 7B struggled. They would often "hallucinate" an entire multi-step investigation in a single turn, inventing fake tool outputs and presenting a final answer without ever actually using the tools. They were trying to solve the whole problem in one go.
+
 - **The Fix:** Radical prompt simplification. The elegant, multi-part strategy in the prompt was confusing the model. We had to replace it with a blunt, rigid set of rules: **"You must only call ONE tool per step. Do not plan multiple steps ahead."** This reduced the model's "creative freedom" and forced it into the step-by-step reasoning loop we needed.
 
 #### **Phase 5: The Final Architecture – A Model-Agnostic Investigator**
