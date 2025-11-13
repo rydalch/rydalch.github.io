@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: distill
 title: llm questionnaire processing
 description: tool to generate accurate responses to customer security questionnaires using an LLM
 img: assets/img/SCF-Control-Mapper.png
