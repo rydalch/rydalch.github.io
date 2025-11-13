@@ -2,7 +2,7 @@
 layout: page
 title: budget tracker
 description: update a budget automatically
-img:
+img: assets/img/spreadsheet.jpg
 importance: 3
 category: fun
 ---
@@ -10,6 +10,12 @@ category: fun
 ### From Tedious to Automated: Building a Smart Budgeting Script
 
 I've tried many different budgeting software solutions, but haven't found one that works for our family. I finally realized that my budget spreadsheet did everything I wanted in the format I wanted. But manually updating a budget spreadsheet every month is a chore. The process of downloading various CSV files from different accounts, normalizing the data, and copy pasting transactions is tedious and prone to error. I decided to automate this process with a Python script, a project that evolved from a simple tool into a robust, intelligent solution.
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/spreadsheet.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
 
 My initial goal was to create a script that could read a CSV file and upload its contents to a Google Sheet. Using the pandas library for data manipulation and gspread to interact with the Google Sheets API, I quickly built a functional prototype. However, the real challenge began when I started feeding it actual data from different financial accounts.
 
