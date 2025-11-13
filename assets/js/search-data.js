@@ -35,11 +35,6 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
-            },},{id: "projects-llm-questionnaire-processing",
-          title: 'LLM Questionnaire Processing',
-          description: "tool to respond to customer security questionnaires using an LLM",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/1_project/";
             },},{id: "projects-placeholder",
           title: 'placeholder',
           description: "coming soon",
@@ -50,6 +45,11 @@ ninja.data = [{
           description: "update a budget automatically",
           section: "Projects",handler: () => {
               window.location.href = "/projects/4_project/";
+            },},{id: "projects-llm-questionnaire-processing",
+          title: 'LLM Questionnaire Processing',
+          description: "tool to respond to customer security questionnaires using an LLM",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/llm-answers/";
             },},{id: "projects-risk-resources",
           title: 'risk resources',
           description: "knowledgebase of current cyber risk resources",
