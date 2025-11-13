@@ -2,7 +2,7 @@
 layout: page
 title: risk resources
 description: knowledgebase of current cyber risk resources
-img: assets/img/3.jpg
+img: assets/img/Risk-Screenshot.png
 importance: 2
 category: work
 ---
