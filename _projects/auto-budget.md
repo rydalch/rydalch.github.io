@@ -24,3 +24,7 @@ The first problem was the CSV files themselves. Each bank formats its export dif
 The next hurdle was the data's logic. My credit card statements listed expenses as positive numbers and payments as negative, the opposite of how they needed to be recorded in my budget. The solution was to build a system that could learn. The first time the script encounters a new account, it analyzes the file for key patterns, like payment confirmation text and the ratio of positive to negative transactions, to guess the account type. It then asks the user for a one time confirmation. This choice is saved to a local configuration file. On all subsequent runs, the script recognizes the account and automatically handles the data correctly without asking again.
 
 What began as a simple automation task became a valuable lesson in building resilient software. A truly workable solution does not just execute a task. It anticipates the inconsistencies of real world data and is designed to be both intelligent and user friendly. The final script is a powerful tool that has turned a monthly chore into a simple, two command process.
+
+---
+
+The complete code and budget template are available on my GitHub, including setup instructions: https://github.com/rydalch/python-budget-automation
