@@ -65,9 +65,14 @@ The API has a 20MB limit per image, so I added automatic resizing logic. High-DP
 3. Send to Google Cloud Vision API with automatic size optimization
 4. Refine output with local LLM for cleanup and formatting
 5. Save as Markdown
+6. Optional - split the Markdown file into a separate individual file for each day. Compatible with Obsidian.
 
 ## Results
 
 The Google Vision API consistently produces decent transcriptions of my challenging handwritten text, but still has some OCR type artifacts. The LLM refinement step (using LM Studio locally) cleans up those artifacts and structures the output into simple Markdown. Because the LLM understands natural language, it seems to do a good job at figuring out what a sentence meant to say.
 
 I still manually reviewed the output against the original page and would sometimes find mistakes. But the results were much more accurate and clean than any other approach I've tried in the past. I have a few years of journals left to scan, and I'll continue to experiment for more accuracy and automation.
+
+---
+
+The complete code is available on my GitHub, including setup instructions: [https://github.com/rydalch/handwriting2md]
