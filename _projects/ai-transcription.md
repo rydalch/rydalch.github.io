@@ -75,4 +75,4 @@ I still manually reviewed the output against the original page and would sometim
 
 ---
 
-The complete code is available on my GitHub, including setup instructions: [https://github.com/rydalch/handwriting2md]
+The complete code is available on my GitHub, including setup instructions: [https://github.com/rydalch/handwriting2md](https://github.com/rydalch/handwriting2md)
