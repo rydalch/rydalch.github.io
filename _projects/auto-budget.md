@@ -27,4 +27,4 @@ What began as a simple automation task became a valuable lesson in building resi
 
 ---
 
-The complete code and budget template are available on my GitHub, including setup instructions: https://github.com/rydalch/python-budget-automation
+The complete code and budget template are available on my GitHub, including setup instructions: [https://github.com/rydalch/python-budget-automation](https://github.com/rydalch/python-budget-automation).
