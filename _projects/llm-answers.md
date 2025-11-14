@@ -96,4 +96,8 @@ The final system is a testament to this iterative journey. It is:
 
 This project drove home a core lesson of the post-RAG era: an agent's intelligence is not just in the LLM. It's in the co-design of its "brain" (the prompt and strategy) and its "body" (the tools it has to work with). The initial hallucination problems weren't solved by a better model, but by a better prompt. The navigation problems weren't solved by a better prompt, but by a better tool.
 
-Moving from a simple pipeline to this robust investigator was a shift from asking "Can an LLM answer this?" to "How can I build a reliable, verifiable process where an LLM is a constrained and supervised component?" The result is a system that feels less like magic and more like a tireless, highly competent junior analyst—and in the world of security and compliance, that's exactly what you need.
+Moving from a simple pipeline to this robust investigator was a shift from asking "Can an LLM answer this?" to "How can I build a reliable, verifiable process where an LLM is a constrained and supervised component?" The result is a system that feels less like magic and works more like a tireless, highly competent junior analyst. 
+
+---
+
+The complete code is available on my GitHub, including setup instructions: [https://github.com/rydalch/security-questionnaire-agent](https://github.com/rydalch/security-questionnaire-agent)
