@@ -24,16 +24,14 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Hi! I'm an information systems leader with 20+ years of experience now transitioning to higher education.
+# Hi!
 
-### Teaching
+I'm an information systems leader with 20+ years of experience transitioning to higher education.
+
+# Teaching
 
 I believe in creating an experiential learning environment where students apply theory to solve real-world problems. This approach helps equip students with critical thinking and practical skills demanded by information systems careers.
 
 As a Teaching Assistant during my graduate studies, I developed and taught curriculum for a data communications lab serving over 100 undergraduate students. I mentored high school students in the AFA [CyberPatriot](https://www.uscyberpatriot.org/) competition. And I've developed corporate cyber security training.
 
 These experiences solidified my passion for inspiring and supporting learners.
-
-### Professional Career
-
-Graduated from BYU in 2001. Started at EY doing cyber security consulting work and information systems auditing. I went to [Hewitt Associates (acquired by Aon)](https://www.aon.com) where I led disaster recovery, business continuity, and crisis management efforts. I worked for [Carelon](https://www.carelon.com), building a DR program from scratch and helping build their information security program. I worked for [Motorola Solutions](https://www.motorolasolutions.com), starting with third-party risk management and growing to lead the enteprise governance, risk and compliance team. Most recently I led the [Danaher](https://www.danaher.com) data protection and GRC teams.
