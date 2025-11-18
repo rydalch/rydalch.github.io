@@ -1,6 +1,6 @@
 ---
 layout: redirected
-permalink: /cv/
+permalink: https://rydalch.net/assets/pdf/Rydalch-CV-25cln.pdf
 title: cv
 nav: true
 nav_order: 4
