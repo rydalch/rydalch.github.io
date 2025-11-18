@@ -24,11 +24,7 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-# Hi!
-
 I'm an information systems leader with 20+ years of experience transitioning to higher education.
-
-# Teaching
 
 I believe in creating an experiential learning environment where students apply theory to solve real-world problems. This approach helps equip students with critical thinking and practical skills demanded by information systems careers.
 
