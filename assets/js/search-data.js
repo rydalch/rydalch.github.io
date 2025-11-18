@@ -21,7 +21,7 @@ ninja.data = [{
           description: "",
           section: "Navigation",
           handler: () => {
-            window.location.href = "/cv/";
+            window.location.href = "/https:/rydalch.net/assets/pdf/Rydalch-CV-25cln.pdf";
           },
         },{id: "nav-teaching",
           title: "teaching",
