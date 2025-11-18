@@ -129,11 +129,9 @@
         "Built database schemas for Oracle DBMS.",
         "Collaborated with content managers and designers to deliver user-centered web experiences."
       ]
-    }
-  ],
-  "volunteer": [
+    },
     {
-      "organization": "Brigham Young University",
+      "name": "Brigham Young University",
       "location": "Provo, UT",
       "position": "Teaching Assistant",
       "url": "",
@@ -146,7 +144,9 @@
         "Developed HTML curriculum and instructional materials.",
         "Provided one-on-one mentorship."
       ]
-    },
+    }
+  ],
+  "volunteer": [
     {
       "organization": "CyberPatriot High School Program",
       "location": "",
@@ -184,7 +184,7 @@
       "area": "Information Systems Management",
       "studyType": "Masters",
       "startDate": "",
-      "endDate": "2001-01-01",
+      "endDate": "2001",
       "score": "",
       "courses": []
     },
@@ -195,7 +195,7 @@
       "area": "Management",
       "studyType": "Bachelor of Science",
       "startDate": "",
-      "endDate": "2001-01-01",
+      "endDate": "2001",
       "score": "",
       "courses": []
     }
@@ -328,46 +328,17 @@
         "Microsoft Entra",
         "ServiceNow IRM",
         "Proofpoint",
-        "Microsoft Power Automate",
-        "Oracle",
-        "UNIX/AIX",
+        "Cloud Technologies",
+        "Linux, MacOS, Windows",
         "HTML/CSS",
-        "Javascript"
+        "Javascript",
+        "Python",
+        "AI"
       ]
     }
   ],
   "languages": [],
   "interests": [],
   "references": [],
-  "projects": [
-    {
-      "name": "Enterprise GRC Program Implementation",
-      "summary": "Led the establishment of governance, risk, and compliance (GRC) programs across more than 15 operating companies, including the selection and implementation of the ServiceNow Integrated Risk Management solution.",
-      "highlights": [
-        "Oversaw all phases including roadmap planning, requirements investigation, systems design, project management, and user training."
-      ],
-      "startDate": "2019-07-01",
-      "endDate": "2025-04-01",
-      "url": ""
-    },
-    {
-      "name": "Microsoft Purview Sensitivity Labeling Rollout",
-      "summary": "Directed the enterprise-wide rollout of Microsoft Purview Sensitivity Labeling to enhance data protection.",
-      "highlights": [
-        "Achieved 90% global adoption among 80,000 users in 9 months.",
-        "Integrated labeling with Proofpoint and Microsoft Purview email protections to reduce unauthorized data sharing."
-      ],
-      "startDate": "2019-07-01",
-      "endDate": "2025-04-01",
-      "url": ""
-    },
-    {
-      "name": "Enterprise Resiliency Program Revamp",
-      "summary": "Revamped the enterprise resiliency program including business continuity, disaster recovery, and crisis management.",
-      "highlights": ["Resulted in over $300k savings per year through process improvements and optimization."],
-      "startDate": "2015-07-01",
-      "endDate": "2019-07-01",
-      "url": ""
-    }
-  ]
+  "projects": []
 }
