@@ -50,6 +50,11 @@ ninja.data = [{
           description: "tool to generate accurate responses to customer security questionnaires using an LLM",
           section: "Projects",handler: () => {
               window.location.href = "/projects/llm-answers/";
+            },},{id: "projects-prompt-library",
+          title: 'prompt library',
+          description: "learn with interactive LLM prompts",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/prompt-library/";
             },},{id: "projects-risk-resources",
           title: 'risk resources',
           description: "knowledgebase of current cyber risk resources",
