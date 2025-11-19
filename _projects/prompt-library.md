@@ -29,5 +29,3 @@ You can download the library today at the link below:
 
 **We Want Your Feedback**
 Because this is an experimental learning tool, the team is eager to hear how it works for you. Please send your thoughts, experiences, and suggestions to **training@cloudsecurityalliance.org**.
-
-
