@@ -24,10 +24,8 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I'm an information systems leader with 20+ years of experience transitioning to higher education.
+I spent the last 20 years managing risk and information security for global conglomerates like Danaher (Fortune 200) and Motorola Solutions. During that time, I didn't just implement controls; I designed security curriculums that taught 80,000+ employees how to protect data across the globe.
 
-I believe in creating an experiential learning environment where students apply theory to solve real-world problems. This approach helps equip students with critical thinking and practical skills demanded by information systems careers.
+Now, I am transitioning from the boardroom to the classroom to prepare the next generation of Information Systems leaders.
 
-As a Teaching Assistant during my graduate studies, I developed and taught curriculum for a data communications lab serving over 100 undergraduate students. I mentored high school students in the AFA [CyberPatriot](https://www.uscyberpatriot.org/) competition. And I've developed corporate cyber security training.
-
-These experiences solidified my passion for inspiring and supporting learners.
+My teaching philosophy is simple: things are best learned through experimentation. Whether I’m building an agentic LLM tool with Python to automate security questionnaires or leading a Kaizen event to cut factory costs, I believe in applying theory to real-world chaos. I am dedicated to creating an experiential learning environment where students don't just memorize concepts—they apply them to solve the complex, evolving problems of the digital world.
