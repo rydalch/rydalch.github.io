@@ -24,8 +24,8 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I spent the last 20 years managing risk and information security for global conglomerates like Danaher (Fortune 200) and Motorola Solutions. During that time, I didn't just implement controls; I designed security curriculums that taught 80,000+ employees how to protect data across the globe.
+I spent the last 20 years leading risk and information security initiatives for Fortune 500 conglomerates like Danaher and Motorola Solutions. During that time, in addition to implementing security controls, I designed security curriculums that taught 80,000+ employees how to protect data across the globe.
 
-Now, I am transitioning from the boardroom to the classroom to prepare the next generation of Information Systems leaders.
+Now, I am transitioning from the conference room to the classroom to prepare the next generation of Information Systems leaders.
 
-My teaching philosophy is simple: things are best learned through experimentation. Whether I’m building an agentic LLM tool with Python to automate security questionnaires or leading a Kaizen event to cut factory costs, I believe in applying theory to real-world chaos. I am dedicated to creating an experiential learning environment where students don't just memorize concepts—they apply them to solve the complex, evolving problems of the digital world.
+My teaching philosophy is simple: students learn best through experience and experimentation. Whether I’m building an agentic LLM tool with Python to automate security questionnaires or leading a Kaizen event to cut waste in security compliance activities, I've been in the trenches of applying theory to real-world chaos. I am dedicated to creating an experiential learning environment where students can use what they learn in class to solve the complex, evolving problems of actual organizations.
