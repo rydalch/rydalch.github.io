@@ -35,7 +35,18 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
-            },},{id: "projects-handwritting-transcription",
+            },},{id: "news-quote-3",
+          title: 'Quote_3',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/quote_3/";
+            },},{id: "news-the-so-called-little-star-of-bethlehem-was-actually-very-large-in-its-declaration-of-divine-design-it-had-to-have-been-placed-in-its-precise-orbit-long-long-before-it-shone-so-precisely-his-overseeing-precision-pertains-not-only-to-astrophysical-orbits-but-to-human-orbits-as-well-this-is-such-a-stunning-thing-for-us-to-contemplate-as-to-our-obligations-to-shine-as-lights-within-our-own-orbits-and-personal-responsibilities-neal-a-maxwell",
+          title: 'The so-called “little star of Bethlehem” was actually very large in its declaration...',
+          description: "",
+          section: "News",},{id: "news-although-the-world-is-full-of-suffering-it-is-also-full-of-the-overcoming-of-it-helen-keller",
+          title: 'Although the world is full of suffering, it is also full of the...',
+          description: "",
+          section: "News",},{id: "projects-handwritting-transcription",
           title: 'handwritting transcription',
           description: "using ai to transcribe my handwritten journals",
           section: "Projects",handler: () => {
