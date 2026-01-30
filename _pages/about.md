@@ -24,8 +24,6 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-For 20 years, I led risk and information security at places like Danaher and Motorola Solutions. Beyond the usual security work, I built training programs that reached over 80,000 employees worldwide. Teaching people who'd never thought twice about data protection to actually care about it enough to change the way they worked.
+I’ve spent the last 20 years leading risk and InfoSec at major companies like Danaher and Motorola Solutions. While I managed governance, risk, and compliance programs, I’m most proud of rolling out training to over 80,000 global employees that shifted the culture so people actually understood why security matters.
 
-Now I want to help shape the next wave of Information Systems leaders.
-
-And I believe people learn by doing. To understand AI, I built an agentic LLM tool in Python to automate security questionnaires. And I've run Kaizen events to strip bloat out of compliance processes. Theory matters, but I've spent my career figuring out how to make theory work in the messiness of the real world. That's what I want to bring to students. A place where they can wrestle with real problems from real organizations.
+Now, I’m pivoting to education to help train the next generation of leaders. My teaching philosophy is pretty simple: you learn by doing. I’m still hands-on; I recently built an agentic LLM tool in Python to automate security questionnaires and I've used Kaizen events to streamline compliance workflows. I want to help students gain confidence to work through the messy, complex problems they will face in the real world.
